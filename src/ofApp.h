@@ -21,14 +21,18 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+	
 		ofxWord2VecEmbedding embed;
-		vector <string>myStrings;
+		ofxWord2VecVector Vec;
 		ofPolyline poly;
-		ofPath path;
 		string f;
 		string s;
-		ofImage myImage;
-		ofPixels myPixels;
-		bool activate;
+		string n;
+		bool calculate;
+		bool visualize;
 		ofRectangle myButton;
+		ofTrueTypeFont myFont;
+		int zoom;
+		
+		
 };
